@@ -1,24 +1,24 @@
 #include<iostream>
 using namespace std;
 
-class ContohAkses{
-    private:
+class ContohAkses{// inisialisasi class
+    private:// membuat private variabr yang hanya bisa diakses di class ini
         int privateVar;
 
-    protected:
+    protected: // membuat protected variabel yang hanya bisa diakses di class ini dan class turunan
         int protectedVar;
 
-    public:
+    public:// membuat class public yang bisa diakses di mana pun
         int publicVar;
 
         //Constuctor
-        ContohAkses(){
+        ContohAkses(){// membuat constructor untuk menyimpan nilai di variabel
             privateVar   = 1;
             protectedVar = 2;
             publicVar    = 3;
         }
 
-    void tampilkanSemua(){
+    void tampilkanSemua(){// membuat fungsi untuk menampilkan variabel
         cout<<"Akses dari dalam class : "<<endl;
         cout<<privateVar<<endl;
         cout<<protectedVar<<endl;
@@ -27,24 +27,24 @@ class ContohAkses{
 };
 
 // kelas turunan
-class Turunan : public ContohAkses{
+class Turunan : public ContohAkses{// membuat class turunan dari class contohAkses
     public: 
     void aksesProtected(){
-        cout<<"Akses publicVar : "<<publicVar<<endl;
-        cout<<"Akses protectedVar : "<<protectedVar<<endl; 
-        //cout<<"Akses privateVar : "<<privateVar<<endl;
+        cout<<"Akses publicVar : "<<publicVar<<endl;// mengakses publicvar
+        cout<<"Akses protectedVar : "<<protectedVar<<endl; // mengakses protecredvar
+        //cout<<"Akses privateVar : "<<privateVar<<endl; (mengakses private var) 
     }
 };
 
 int main(){
     ContohAkses obj;
-    obj.tampilkanSemua();
+    obj.tampilkanSemua(); // mengakses class contohAkses
 
     cout<<"Akses dari luar class : "<<endl;
-    cout<<obj.publicVar<<endl;
-    // cout<<obj.protectedVar<<endl;
-    // cout<<obj.privateVar<<endl;
+    cout<<obj.publicVar<<endl; // mengakses publicvar
+    // cout<<obj.protectedVar<<endl; // mengakses protectedvar
+    // cout<<obj.privateVar<<endl; (mengakses private var) 
     Turunan tur;
-    tur.aksesProtected();
+    tur.aksesProtected(); // mengakses class turunan
 
 }
