@@ -19,15 +19,15 @@ int main(){
     // Deklarasi pointer
 
     //int number = 35;
-    //int *pointer_number = &number;
+    //int *pointer_number = &number;( deklarasi pointer di mana (*) sebagai tanda pointer dan (&) sebagai address off dari variabel 
 
 
     // cout<<"Isi variabel number : "<<number<<endl;
     // cout<<"Alamat memori variabel number : "<<&number<<endl;
-    // cout<<"Isi dari variabel pointer_number  : "<<pointer_number<<endl;
-    // cout<<"Isi variabel yang ditunjuk oleh pointer_number : "<<*pointer_number<<endl;
-    // cout<<"Alamat memori variabel pointer_number  : "<<&pointer_number<<endl;
-    // *pointer_number=25;
+    // cout<<"Isi dari variabel pointer_number  : "<<pointer_number<<endl;(mengakses variabel dari pointer) 
+    // cout<<"Isi variabel yang ditunjuk oleh pointer_number : "<<*pointer_number<<endl;(mengakses alamat memori variabel) 
+    // cout<<"Alamat memori variabel pointer_number  : "<<&pointer_number<<endl;( mengakses alamat memori pointer) 
+    // *pointer_number=25;// mengganti nilai pointer 
     // cout<<"Isi variabel pointer_number setelah diganti : "<<*pointer_number<<endl;
 
     // Pointer in array
@@ -47,7 +47,7 @@ int main(){
 
     // int num1 = 5;
     // int num2 = 7;
-    // penjumlahan(num1,num2);
+    // penjumlahan(num1,num2);(pointer sebagai paramter aktual dalam memanggil fungsi) 
     // cout<<num1<<endl;
     // cout<<num2<<endl;
     // penjumlahan_pointer(&num1,&num2);
@@ -58,12 +58,12 @@ int main(){
 
     // int score = 4;
     // int *pointer_score = &score;
-    // int **ptr_pointer_score = &pointer_score;
+    // int **ptr_pointer_score = &pointer_score;(pointer yang merujuk pada pointer lainnya) 
 
     // cout<<"Isi variabel score : "<<score<<endl;
     // cout<<"Alamat memori variabel score : "<<&score<<endl;
     // cout<<"Isi dari variabel pointer_score  : "<<pointer_score<<" dan isi variabel yang ditunjuk oleh pointer_score  :"<<*pointer_score<<" alamat memori pointer_score : "<<&pointer_score<<endl;
-    // cout<<"Isi dari variabel ptr_pointer_score  : "<<ptr_pointer_score<<" dan isi variabel yang ditunjuk oleh ptr_pointer_score  :"<<**ptr_pointer_score<<" alamat memori ptr_pointer_score : "<<&ptr_pointer_score<<endl;
+    // cout<<"Isi dari variabel ptr_pointer_score  : "<<ptr_pointer_score<<" dan isi variabel yang ditunjuk oleh ptr_pointer_score  :"<<**ptr_pointer_score<<" alamat memori ptr_pointer_score : "<<&ptr_pointer_score<<endl;(mengakses pointer dengan pointer menggunakan simbol dua bintang (**)) 
 
     // Dynamic Pointer
 
@@ -71,7 +71,7 @@ int main(){
     // *ptr = 30;
     // cout<<"Isi variabel ptr = "<<*ptr<<" alamat variabel ptr = "<<&ptr<<endl;
     
-    // delete ptr; //deallocation 
+    // delete ptr; //deallocation (menghapus nilai pointer) 
     // cout<<"Isi variabel ptr = "<<*ptr<<" alamat variabel ptr = "<<&ptr<<endl;
 
     //Contoh 
