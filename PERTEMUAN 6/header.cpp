@@ -1,7 +1,7 @@
 #include<iostream>//header bawan
 #include<cmath>//header bawan
 #include"headerCustom.h"//header yang buat sendiri
-u;
+u;// menggunakan header yang sudah dibuat di mana u menggantikan using namespace std
 
 int jumlah(int a,int b){
     return a+b;
@@ -10,7 +10,7 @@ int jumlah(int a,int b){
 int kurang(int a, int b){
     return a-b;
 }
-j{
+j{// J menggantikan int main() 
     f;
     int n;
 
